@@ -1,0 +1,27 @@
+{
+  "name": "aula_06_pi2_2025",
+  "version": "1.0.0",
+  "description": "Implementar a função `atualizarAluno(id)` no frontend para permitir **editar os dados dos alunos** de forma interativa, consumindo a API já existente (`Node.js + Express + MongoDB`).",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabiIzidoro/aula_06_pi2_2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FabiIzidoro/aula_06_pi2_2025/issues"
+  },
+  "homepage": "https://github.com/FabiIzidoro/aula_06_pi2_2025#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
+  }
+}
