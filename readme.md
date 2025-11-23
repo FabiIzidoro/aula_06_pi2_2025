@@ -1,82 +1,43 @@
-# 📝 Atividade Prática 03
-#  Atualização de Alunos no Frontend
+# 📝 Atividade Prática 03 - Atualização de Alunos no Frontend
 
-## Objetivo
+## Descrição
 
-Implementar a função `atualizarAluno(id)` no frontend para permitir **editar os dados dos alunos** de forma interativa, consumindo a API já existente (`Node.js + Express + MongoDB`).
+Este projeto implementa uma funcionalidade para **editar os dados dos alunos** de forma interativa no frontend. A aplicação consome uma API existente (`Node.js + Express + MongoDB`) para realizar operações de leitura e atualização dos alunos.
 
-O foco é praticar **fetch API, manipulação do DOM e integração com backend**.
+A função `atualizarAluno(id)` foi implementada para permitir que os dados de um aluno (nome, idade e curso) sejam atualizados diretamente no frontend, com envio para o backend utilizando a API.
 
----
+## Tecnologias
 
-## Repositório base
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express, MongoDB
+- **Métodos de requisição**: Fetch API (`PUT`/`PATCH`)
 
-Os arquivos já disponíveis estão no repositório:
+## Funcionalidades
 
-```
-aula_06_pi2_2025/
-├─ index.html
-├─ style.css
-├─ script.js
-```
+- **Carregar Alunos**: Lista de alunos carregada automaticamente.
+- **Adicionar Aluno**: Formulário para adicionar novos alunos.
+- **Editar Aluno**: Clique em "editar", altere os dados e clique em "salvar".
+- **Deletar Aluno**: Clique em "deletar" para remover um aluno.
 
-* Clonar o repositório:
+## Como Usar
+
+### Passo 1: Clonar o Repositório
+
+Clone o repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/aula_06_pi2_2025.git
+git clone https://github.com/FabiIzidoro/aula_06_pi2_2025
 cd aula_06_pi2_2025
+
 ```
+2. Instale as dependências:
+```bash
+npm install
+```
+3. Execute o servidor:
+```bash
+node app.js
+```
+O servidor será iniciado na porta 3000. Você pode acessar a API em http://localhost:3000.
 
----
-
-## Instruções
-
-1. **Entender o código existente**
-
-   * `carregarAlunos()` → lista os alunos da API.
-   * `deletarAluno(id)` → apaga um registro.
-   * `form.addEventListener("submit")` → cria novo aluno.
-
-2. **Implementar `atualizarAluno(id)`**
-
-   * A função deve permitir **editar o nome, idade e curso** do aluno selecionado.
-   * Pode ser feito:
-
-     * **Inline** (inputs aparecem no lugar do item da lista) **ou**
-     * **Usando um formulário de edição** que preenche os campos existentes.
-
-3. **Enviar atualização para o backend**
-
-   * Usar `fetch` com método `PUT` (ou `PATCH`) para `API_URL/id`.
-   * Enviar os campos atualizados como JSON.
-   * Atualizar a lista de alunos após a edição.
-
-4. **Atualizar HTML/CSS se necessário**
-
-   * Pode adicionar classes, inputs ou botões no `index.html`.
-   * Ajustar o estilo no `style.css` para que a edição fique clara e funcional.
-
-5. **Testar**
-
-   * Criar um novo aluno.
-   * Editar o aluno usando a função implementada.
-   * Verificar se as alterações aparecem na lista e no banco de dados.
-
----
-
-## Entregável
-
-* **Link do repositório no GitHub** com o código atualizado, incluindo:
-
-  * `script.js` com a função `atualizarAluno(id)` implementada.
-  * Eventuais alterações no `index.html` e `style.css`.
-  * Certifique-se de que o projeto **funciona localmente** antes de enviar.
-
----
-
-## Dicas
-
-* Para edição inline, pode usar `prompt()` para facilitar ou criar inputs dinamicamente.
-* Lembre-se de chamar `carregarAlunos()` após o PUT/PATCH para atualizar a lista.
-* Teste cada passo antes de prosseguir.
-
+> Desenvolvido por Fabiana Izidoro Luz. Aluna do curso de Ciência da Computação - IFTM
